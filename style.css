@@ -12,18 +12,85 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    opacity: 1;
+    background-color: #f2f5f0;
+}
+
+header > a{
+    width: 30%;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+nav{
+    width: 50%;  
+    float: right;  
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+#cart-logo{
+    width: 30px;
+    height: 53px;
 }
 
   /* Main body */
+  /* Home */
+#home{
+    width: 100%;
+    height: 300px;
+    padding-top: 70px;    
+}
+
+#home h1{
+    font-size: 1.6em;
+}
+
+  /* Shop */
 main {
     width: 100%;
     text-align: center;
     background-color: #f2f5f0;
 }
 
-main h1 {
-    font-size: 2em;
-    padding-top: 30px;
+main #title {
+    font-size: 1.6em;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
 }
 
 .container {
@@ -41,7 +108,8 @@ main h1 {
 .product {
     width: 280px;
     height: fit-content;    
-    padding: 10px;
+    padding: 20px 10px; 
+    filter: drop-shadow(2px 2px 2px #585858);
 }
 
 .content {
@@ -49,10 +117,12 @@ main h1 {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
+    
 }
 
 .product:hover .content {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
 .name {
@@ -82,6 +152,7 @@ main h1 {
     border: none;
     font-size: 1em;
     font-weight: bold;
+    cursor: pointer;
     background-color: #979696;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -89,4 +160,68 @@ main h1 {
 .btn:hover {
     background-color: #000;
     color: #f2f5f0;
+}
+
+/* About */
+#about{
+    width: 100%;
+    height: 600px;
+    padding-top: 70px;    
+}
+
+#about h1{
+    font-size: 1.6em;
+}
+
+/* Cart */
+.cart-img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f5f0;
+}
+
+footer div{
+    padding: 0 30px;
+}
+
+footer div span a{
+    text-decoration: none;
+    color: #7e7373;
+    cursor: pointer;
+}
+
+footer > div > span a:hover{
+    color: #000;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    .product {
+        width: 350px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div{
+        padding: 10px;
+    }
 }

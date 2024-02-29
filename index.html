@@ -12,8 +12,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <a href="#">
+                <h1>My Shop</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="cart.html"><img src="images/cart-shopping-fast-svgrepo-com.svg" alt="Shopping Cart" id="cart-logo"></a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <h1>Menu</h1>
+            <section id="home">
+                <h1>Home</h1>
+            </section>
+            <section id="shop">
+                <h1 id="title">Shop</h1>
             <div class="container">
                 <div id="menu">
                     <div class="product">
@@ -36,7 +53,7 @@
 
                     <div class="product">
                         <div class="content">
-                            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fdd%2Fcf%2Fddcfe4e1b1313da86b059e70a1422ec4927aece3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]" alt="Tshirt">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMC3ecmlvhEZz794gW0ZSSQZ42uUqNUv3qOWPwxYLo5Wjdv0Y0bSYfC2Pb362YnKyWzA&usqp=CAU" alt="Tshirt">
                             <span class="name">TShirt</span> 
                             <span class="price">20000</span>
                         </div>
@@ -69,13 +86,79 @@
                         </div>
                         <button type="submit" id="btn" class="btn">Add to cart</button>
                     </div>
+
+                    <div class="product">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctmv6Fu71hjjcAsKQCGtpNp01PK4ppFrtphWEbONCiWr7vNtXZoAlnK-tVqn8iVWqdb4&usqp=CAU" alt="Sports Trouser">
+                            <span class="name">Sports Trouser</span> 
+                            <span class="price">35000</span>
+                        </div>
+                        <button type="submit" id="btn" class="btn">Add to cart</button>
+                    </div>
+
+                    <div class="product">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_FccMxRA_VoHRPsb6cYcEsSt-iVpShY9jg&usqp=CAU" alt="Men's Gentle Trouser">
+                            <span class="name">Men's Gentle Trouser</span> 
+                            <span class="price">40000</span>
+                        </div>
+                        <button type="submit" id="btn" class="btn">Add to cart</button>
+                    </div>
+
+                    <div class="product">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2zQRPgCaWMhx92bjV1mGgveylIexXu4BfobTs7_-Kwboa0N39dXYC_NOu3dsA5xP3tI&usqp=CAU" alt="Sweat pants for men">
+                            <span class="name">Sweat pants for men</span> 
+                            <span class="price">45000</span>
+                        </div>
+                        <button type="submit" id="btn" class="btn">Add to cart</button>
+                    </div>
+
+                    <div class="product">
+                        <div class="content">
+                            <img src="https://i5.walmartimages.com/seo/adviicd-Men-s-Fashion-Hoodies-Sweatshirts-Alt-Hoodie-Mens-Fall-Winter-Leisure-Travel-Plus-Size-Solid-Color-Loose-Hooded-Giant-Sweatshirt-Blanket_edcb2f0e-583d-4635-b261-2583cfa07993.4f537d88ce154f72c0a44917578dce6d.jpeg" alt="Men's Hoodie">
+                            <span class="name">Men's Hoodie</span> 
+                            <span class="price">35000</span>
+                        </div>
+                        <button type="submit" id="btn" class="btn">Add to cart</button>
+                    </div>
+
+                    <div class="product">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR13PQmZKAmXLnXtDsiFpa1T76lN-msSeHRCEO3bQ6cFKCVfIm8-s2bARSCpwzgHEVxt2U&usqp=CAU" alt="Men's Shorts">
+                            <span class="name">Men's Shorts</span> 
+                            <span class="price">30000</span>
+                        </div>
+                        <button type="submit" id="btn" class="btn">Add to cart</button>
+                    </div>
+
+                    <div class="product">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1S6twKKXwKZhdrloLHbFe3uY3zYwjWJ00A&usqp=CAU" alt="Men's Boxers">
+                            <span class="name">Men's Boxers</span> 
+                            <span class="price">10000</span>
+                        </div>
+                        <button type="submit" id="btn" class="btn">Add to cart</button>
+                    </div>
                     
                 </div>
-            </div>  
-            <div id="cart">
-
-            </div>          
-        </main>        
+            </div>           
+            </section>
+            <section id="about">
+                <h1>About</h1>
+            </section>
+        </main>  
+        <hr> 
+        <footer>
+            <div>
+                <span>&copy; </span>
+                <span id="year"></span>
+            </div>
+            <div>
+                <span>Alright Reserved.</span>
+                <span>Developed by <a href="http://oryemasteph.netlify.app" target="_blank">Stephen Oryema.</a></span>
+            </div>
+        </footer>     
         
         <script src="app.js" async defer></script>
     </body>
