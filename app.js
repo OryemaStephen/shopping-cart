@@ -90,13 +90,9 @@ function updateCartDisplay() {
 const orderButton = document.getElementById('order-btn');
 if (orderButton) {
     orderButton.addEventListener('click', function() {
-        if(cartItems.length>0){
-            clearCart(); // Clear the cart when the order button is clicked
-            alert('Thank you for your order!');
-            updateCartDisplay(); // Update cart display after clearing
-        } else {
-            alert('Add item to cart!')
-        }
+        alert('Thank you for your order!');
+        updateCartDisplay(); // Update cart display after clearing
+        clearCart();
     });
   
 } else {
