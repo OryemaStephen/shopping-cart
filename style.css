@@ -144,7 +144,7 @@ main #title {
     border-radius: 30px;
 }
 
-.btn {
+.btn{
     width: 200px;
     height: 40px;
     margin-top: 10px;
@@ -175,14 +175,65 @@ main #title {
 
 /* Cart */
 
+#cart-container{
+    width: 60%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    height: fit-content;
+    background-color: #fff;
+}
+
+#cart-container h1{
+    padding: 30px;
+    font-size: 1.6em;
+}
+
 #cart{
-    width: 800px;
-    height: 300px;
-    background-color: #f2f5f0;
+    width: 100%;
+}
+
+.cart-item, .cart-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-left: 0;
+}
+.cart-header{
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .cart-img{
     width: 100px;
     height: 100px;
+}
+
+.cart-para{
+    font-size: 0.9em;
+    color: #000;
+}
+
+.qty{
+    width: 70px;
+}
+
+#order-btn{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #979696;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#order-btn:hover{
+    background-color: #000;
+    color: #f2f5f0;
 }
 
 
@@ -194,6 +245,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: #f2f5f0;
+    padding: 20px 0;
 }
 
 footer div{
@@ -221,6 +273,7 @@ footer > div > span a:hover{
         height: 250px;
     }
 
+
     footer{
         display: flex;
         flex-direction: column;
@@ -230,4 +283,12 @@ footer > div > span a:hover{
     footer div{
         padding: 10px;
     }
+}
+
+@media screen and (max-width: 900px) {
+    #cart-container{
+        width: 90%;
+        margin: auto;
+    }
+
 }

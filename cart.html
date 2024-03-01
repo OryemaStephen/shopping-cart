@@ -27,9 +27,33 @@
         </header>
 
         <main>
-            <div id="cart">
-            </div>  
-        </main>       
+            <div id="cart-container">
+                <h1>Shopping Cart</h1>
+                <div class="cart-title">
+                    <span class="cart-header">Description</span>
+                    <span class="cart-header">Quantity</span>
+                    <span class="cart-header">Price</span>
+                    <span class="cart-header">SubTotal</span>
+                </div>                
+                <div id="cart">
+                    
+                </div>  
+                <div id="total-price">
+                </div>
+                <button id="order-btn">Order Now</button>
+            </div>
+        </main> 
+
+        <footer>
+            <div>
+                <span>&copy; </span>
+                <span id="year"></span>
+            </div>
+            <div>
+                <span>Alright Reserved.</span>
+                <span>Developed by <a href="http://oryemasteph.netlify.app" target="_blank">Stephen Oryema.</a></span>
+            </div>
+        </footer>     
         <script src="app.js" async defer></script>
     </body>
 </html>
